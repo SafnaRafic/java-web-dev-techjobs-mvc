@@ -9,7 +9,6 @@
 <div class="container body-content">
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-
     <form th:action="@{/search/results}" method = "post">
         <h2>Search by:</h2>
 
@@ -23,14 +22,12 @@
                         th:checked="${column.key == 'all'}"/>
                 <label th:for="${column.key}" th:text="${column.value}"></label>
             </span>
-
         </p>
 
         <p>
             <label for="searchTerm">Keyword:</label>
             <input type="text" name="searchTerm" id="searchTerm" />
         </p>
-
         <input type="submit" value="Search" />
     </form>
 
@@ -38,8 +35,6 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
     <table th:replace="list-jobs :: printJobs"></table>
-
 </div>
-
 </body>
 </html>
