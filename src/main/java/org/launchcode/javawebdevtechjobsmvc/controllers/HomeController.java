@@ -12,6 +12,10 @@ import java.util.HashMap;
 @Controller
 public class HomeController extends TechJobsController{
 
+//    public HomeController() {
+//        super();
+//    }
+
     @RequestMapping(value = "")
     public String index(Model model) {
 
@@ -19,7 +23,7 @@ public class HomeController extends TechJobsController{
         actionChoices.put("search", "Search");
         actionChoices.put("list", "List");
 
-        model.addAttribute("actions", actionChoices);
+        //model.addAttribute("actions", actionChoices);
 
         return "index";
     }

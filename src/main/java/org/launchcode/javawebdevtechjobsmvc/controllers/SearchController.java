@@ -17,6 +17,10 @@ import static org.launchcode.javawebdevtechjobsmvc.controllers.ListController.co
 @RequestMapping("search")
 public class SearchController extends TechJobsController{
 
+    public SearchController() {
+        super();
+    }
+
     @RequestMapping(value = "")
     public String search(Model model) {
         model.addAttribute("columns", columnChoices);

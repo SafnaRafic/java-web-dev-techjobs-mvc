@@ -15,7 +15,7 @@
 
         <table class="job-listing">
 
-            <tr th:style="'color: #0000FF;'">
+            <tr th:style="'color: #FF1493;'">
                 <td th:text="${'ID: '+ row.id}">ID</td>
             </tr>
             <tr>
@@ -31,7 +31,7 @@
                 <td><a th:href="@{/list/jobs(column=location,value=${row.location})}"
                        th:text="${'Location: '+ row.location}"></a>
                 </td>
-<
+
             </tr>
             <tr>
                 <td><a th:href="@{/list/jobs(column=positionType,value=${row.positionType})}"

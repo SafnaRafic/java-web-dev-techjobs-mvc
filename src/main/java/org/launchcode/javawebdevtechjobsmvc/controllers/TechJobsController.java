@@ -13,11 +13,12 @@ public class TechJobsController {
         columnChoices.put("location", "Location");
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
+
+        actionChoices.put("search", "Search");
+        actionChoices.put("list", "List");
     }
     @ModelAttribute("actions")
     public static HashMap<String,String> getActionChoices(){
-        actionChoices.put("search", "Search");
-        actionChoices.put("list", "List");
         return actionChoices;
     }
 }
